@@ -1,0 +1,118 @@
+
+#video {
+    z-index: -2;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+#layer {
+    background-color: black;
+    opacity: .4;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+@media (min-width: 990px){
+    .large-vid {
+        padding: 0;
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .center-text {
+        color: white;
+        text-align: center;
+        width: 100%;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 80pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: -50%;
+        pointer-events: none;
+    }
+    #mute-button span{
+        color: white;
+        font-size: 50pt; 
+        z-index: 0;
+        position: absolute;
+        left: 8vw;
+        top: 50vw;
+        transform: translate(-50%, -50%);
+        margin-bottom: -100%;
+    }
+    #sound-button span{
+        color: white;
+        font-size: 50pt; 
+        z-index: 0;
+        position: absolute;
+        left: 8vw;
+        top: 50vw;
+        transform: translate(-50%, -50%);
+        margin-bottom: -100%;
+    }
+}
+
+@media (max-width: 989px){
+    .large-vid {
+        padding: 0;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+    }
+    .center-text {
+        color: white;
+        text-align: center;
+        width: 100%;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 40pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: -50%;
+        pointer-events: none;
+    }
+    #mute-button span{
+        color: white;
+        font-size: 30pt; 
+        z-index: 0;
+        position: absolute;
+        left: 8vw;
+        top: 60vw;
+        transform: translate(-50%, -50%);
+        margin-bottom: -100%;
+    }
+    #sound-button span{
+        color: white;
+        font-size: 30pt; 
+        z-index: 0;
+        position: absolute;
+        left: 8vw;
+        top: 60vw;
+        transform: translate(-50%, -50%);
+        margin-bottom: -100%;
+    }
+}
