@@ -1,0 +1,31 @@
+{
+    "name": "Video Title",
+    "description": "Large video with white text in the center.",
+    "abstract": false,
+    "deprecated": false,
+    "customFields": [{
+        "name" : "Title",
+        "id" : "title",
+        "defaultValue" : "",
+        "required" : false,
+        "fieldType" : "text"
+    },{   
+        "id": "videoURL",
+        "name": "Video URL",
+        "fieldType": "text",
+        "defaultValue": "",
+        "required": true
+    }
+    ],
+    "renderingConfigs": {
+      "default": {
+        "template": "render.jsp",
+        "displayProperty": {
+          "fullWidth": false,
+          "async": false
+        },
+        "resources": {
+        }
+      }
+    }
+  }
